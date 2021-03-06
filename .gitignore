@@ -1,0 +1,14 @@
+### Django ###
+api/*.log
+api/*.pot
+api/*.pyc
+api/*/__pycache__/
+local_settings.py
+api/db.sqlite3
+api/db.sqlite3-journal
+api/media
+api/dist
+
+### Python ###
+*.py[cod] 
+*$py.class 
