@@ -1,0 +1,17 @@
+version: '3'
+
+tasks:
+  install.be:
+    desc: install be dependencies
+    dir: api
+    cmds:
+      - poetry init
+      - poetry add django
+
+  server.api:
+    desc: Init BE server api
+    dir: api
+    cmds:
+      - poetry shell
+      - poetry install
+      - poetry run python manage.py runserver
